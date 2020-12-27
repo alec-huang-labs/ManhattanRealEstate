@@ -1,0 +1,93 @@
+body,html {
+    font-family: 'Roboto';
+    font-size: 16px;
+}
+#flex-container {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+}
+.col{
+    flex-direction: column;
+}
+#col-mid{
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#title{
+    font-size: 1.5rem;
+}
+a{
+    color: #3f8ec4;
+    text-decoration: none;
+}
+#desc{
+    font-size: 1rem;
+    z-index: 1;
+}
+#slider-container{
+    width: 350px;
+}
+#month{
+    border:0;
+    font-size: 1rem;
+    font-family: 'Roboto';
+}
+#bar{
+    font-family: 'Roboto';
+}
+.ui-slider {
+    height: 5px !important;
+} 
+.ui-slider-handle {
+    height: 12px !important;
+    width: 8px !important;
+} 
+path {
+    stroke: #fff;
+    stroke-width: .5;
+    stroke-dasharray: 1;
+    fill: #eaeaea;
+}
+#neighborhoodTooltip {     
+    text-align: center;         
+    padding: 2px;       
+    font: 0.75rem;
+    background: #fff; 
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;
+    opacity: 0;     
+}
+
+.axis line {
+    stroke:#708090;
+}
+.axis path {
+    fill:white;
+}
+.axis text {
+    fill:#708090;
+}
+.axisLabel {
+    fill:#708090;
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+#stat-container{
+    line-height: 0.90rem;
+    font-size: 0.8rem;
+}
+
+tr:nth-child(odd) {
+    background-color:"#f2f8fd";
+}
+
+@media only screen and (max-width: 480px) {
+    #flex-container {
+        flex-direction: column !important;
+    }
+    #bar{
+        width: 480px !important;
+    }
+}
